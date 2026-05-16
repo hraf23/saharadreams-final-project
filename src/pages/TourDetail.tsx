@@ -8,7 +8,6 @@ import {
   Check,
   X,
   ChevronLeft,
-  Star,
 } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -70,10 +69,6 @@ const TourDetail = () => {
                 <span className="flex items-center gap-2">
                   <Users size={18} />
                   {tour.groupSize}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Star size={18} className="fill-gold text-gold" />
-                  4.9 (48 reviews)
                 </span>
               </div>
             </motion.div>
