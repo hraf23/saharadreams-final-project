@@ -104,7 +104,7 @@ const CustomTrip = () => {
       params.set("destinations", selectedDestinations.join(", "));
       params.set("interests", selectedInterests.join(", "));
 
-      await fetch("/__forms.html", {
+      await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: params.toString(),

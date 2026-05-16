@@ -47,6 +47,46 @@
   </head>
 
   <body>
+    <!-- Netlify form skeletons for build-time detection -->
+    <form name="booking" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="booking" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="date" />
+      <input name="guests" />
+      <input name="title" />
+      <input name="subject" />
+      <input name="tour-title" />
+      <input name="tour-price" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <form name="custom-trip" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="custom-trip" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="startDate" />
+      <input name="duration" />
+      <input name="travelers" />
+      <input name="budget" />
+      <input name="accommodation" />
+      <input name="destinations" />
+      <input name="interests" />
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

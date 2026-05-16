@@ -40,7 +40,7 @@ export const BookingModal = ({
       if (tourTitle) params.set("tour-title", tourTitle);
       if (tourPrice) params.set("tour-price", tourPrice);
 
-      await fetch("/__forms.html", {
+      await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: params.toString(),
